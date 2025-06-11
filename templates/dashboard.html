@@ -1,0 +1,7 @@
+<h2>Bienvenue {{ user.username }}</h2>
+<p>Crédits : {{ user.credits }}</p>
+<a href="/lottery">Jouer à la Loterie (-100 crédits)</a><br>
+<a href="/logout">Déconnexion</a>
+{% if user.is_admin %}
+  <br><a href="/admin">Admin</a>
+{% endif %}

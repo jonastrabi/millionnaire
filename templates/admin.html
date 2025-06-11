@@ -1,0 +1,7 @@
+<h2>Admin - Liste des utilisateurs</h2>
+<ul>
+  {% for u in users %}
+    <li>{{ u.username }} - {{ u.credits }} crédits</li>
+  {% endfor %}
+</ul>
+<a href="/dashboard">Retour</a>
